@@ -1,0 +1,75 @@
+.header {
+    border-bottom: 1px solid #F6F6F6;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 200px;
+    }
+    &__links{
+        display: flex;
+        align-items: center;
+    }
+    &__logo{
+        margin-right: 44px;
+    }
+    &__navigation{
+        display: flex;
+        align-items: center;
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: px-to-em(14);
+        line-height: px-to-per(17,14);
+        margin-right: 20px;
+        padding-bottom: 2px;
+        text-decoration: none;
+        color: $main-color;
+        border-bottom: 1px solid #E6E6E6;
+        &:nth-child(2)::before{
+            content: "";
+            width: 14px;
+            height: 14px;
+            background: url('../img/svg/star.svg') no-repeat;
+            margin-right: 9px;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__contact{
+        &_text{
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: px-to-em(12);
+            line-height: px-to-per(15,12);
+            margin-bottom: 4px;
+        }
+        &_phone{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: px-to-em(18);
+            line-height: px-to-per(22,18);
+            color: $main-color;
+        }
+        &_phone::before{
+            content: "";
+            width: 20px;
+            height: 20px;
+            background: url('../img/svg/phone.svg') no-repeat;
+            margin-right: 5px;
+
+        }
+    }
+    @media screen and (max-width: 1366px) {
+        &__navigation{
+            display: none;
+        }
+    }
+}
