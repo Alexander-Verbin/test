@@ -1,0 +1,28 @@
+mixin service(modifier)
+  .service&attributes(attributes)
+    .service__content     
+      .service__block 
+        .service__info
+          h1.service__info_title Сервисный центр
+          p.service__info_text Ремонт планшетов в Челябинске. Бесплатно продиагностируем и быстро починим любую поломку. Гарантия 3 месяца
+          a(href='#').service__info_link
+            p.service__info_txt Записаться на диагностику
+          .service__advantages
+            .service__advantages_card
+              .service__advantages_card_icon 
+                img(src='/img/svg/screwdriver.svg' alt='Иконка').service__icon_icn
+              .service__advantages_card_text Починим даже то, от чего отказались другие
+            .service__advantages_card
+              .service__advantages_card_icon 
+                img(src='/img/svg/guarantee.svg' alt='Иконка').service__icon_icn
+              .service__advantages_card_text Гарантия нашего сервиса&nbsp;3&nbsp;месяца
+            .service__advantages_card
+              .service__advantages_card_icon 
+                img(src='/img/svg/bonus.svg' alt='Иконка').service__icon_icn
+              .service__advantages_card_text Собственная выгодная бонусная система
+            .service__advantages_card
+              .service__advantages_card_icon 
+                img(src='img/svg/diagnostics.svg' alt='Иконка').service__icon_icn
+              .service__advantages_card_text Бесплатная диагностика даже при отказе от ремонта
+        img(src='img/service/back.png' alt='Обложка').service__image
+        

@@ -48,6 +48,8 @@
 
 /* Blocks */
 $main-color:  #000000;
+$bg-color: #FFFFFF;
+$background-color: #E5E5E5;
 body,
 ul,
 ol {
@@ -81,3 +83,5 @@ p {
 }
 
 @import './src/blocks/header/header';
+@import './src/blocks/menu/menu';
+@import './src/blocks/service/service';

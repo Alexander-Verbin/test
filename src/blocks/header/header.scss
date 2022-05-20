@@ -1,10 +1,12 @@
 .header {
-    border-bottom: 1px solid #F6F6F6;
     &__content{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 200px;
+        padding: 20px 140px;
+        margin: 0 auto;
+        border-bottom: 1px solid #F6F6F6;
+        max-width: 1920px;
     }
     &__links{
         display: flex;
