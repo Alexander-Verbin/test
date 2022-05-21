@@ -46,8 +46,8 @@
         &_text{
             font-family: 'Montserrat';
             font-weight: 500;
-            font-size: px-to-em(12);
-            line-height: px-to-per(15,12);
+            font-size: px-to-em(14);
+            line-height: px-to-per(17,14);
             margin-bottom: 4px;
         }
         &_phone{
@@ -56,8 +56,8 @@
             text-decoration: none;
             font-family: 'Montserrat';
             font-weight: 700;
-            font-size: px-to-em(18);
-            line-height: px-to-per(22,18);
+            font-size: px-to-em(26);
+            line-height: px-to-per(32,26);
             color: $main-color;
         }
         &_phone::before{

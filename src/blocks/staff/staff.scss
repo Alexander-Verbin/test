@@ -1,0 +1,102 @@
+.staff {
+    &__content{
+        padding: 120px 165px 80px;
+        margin: 0 auto;
+        max-width: 1920px;
+    }
+    &__title{
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: px-to-em(48);
+        line-height: 100%;
+        text-align: center;
+        color: $main-color;
+        margin-bottom: 40px;
+    }
+    &__text{
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: px-to-em(26);
+        line-height: 120%;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    &__slider{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    &__slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 29px;
+        &_image{
+            border-radius: 50%;
+            margin-bottom: 40px;
+            width: 223px;
+            height: 223px;
+        }
+        &_name{
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: px-to-em(26);
+            line-height: 130%;
+            text-align: center;
+            color: $main-color;
+            margin-bottom: 16px;
+        }
+        &_txt{
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: px-to-em(18);
+            line-height: 120%;
+            text-align: center;
+            color: $main-color;
+            margin-bottom: 32px;
+            min-height: 66px;
+            max-width: 328px;
+        }
+        &_done{
+            display: flex;
+            align-items: center;
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: px-to-em(16);
+            line-height: 120%;
+            color: $main-color;
+            text-align: center;
+            margin-bottom: 32px;
+            &::before{
+                content: '';
+                background: url('../img/staff/done.jpg') no-repeat;
+                width: 24px;
+                height: 24px;
+                margin-right: 10px;
+            }
+        }
+        &_comment{
+            position: relative;
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: px-to-em(16);
+            line-height: 120%;
+            color: $main-color;
+            padding: 16px;
+            background: #F6F6F6;
+            width: 296px;
+            border-radius: 22px;
+            &::after{
+                content: '';
+                position: absolute;
+                top: -8px;
+                left: 50%;
+                width: 20px;
+                height: 20px;
+                transform: rotate(45deg);
+                background: #F6F6F6;
+            }
+        }
+    }
+}
