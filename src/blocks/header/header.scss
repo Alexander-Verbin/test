@@ -44,11 +44,22 @@
     }
     &__contact{
         &_text{
+            display: flex;
+            align-items: center;
             font-family: 'Montserrat';
             font-weight: 500;
             font-size: px-to-em(14);
             line-height: px-to-per(17,14);
             margin-bottom: 4px;
+            &::before{
+                content: '';
+                background-color: #56CB64;
+                border-radius: 50%;
+                width: 6px;
+                height: 6px;
+                margin-right: 5px;
+                box-shadow: 0px 0px 0px 2px rgba(86, 203, 100, 0.4);
+            }
         }
         &_phone{
             display: flex;
