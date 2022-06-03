@@ -1,23 +1,33 @@
 mixin menu(cl)
   menu(class=`${cl}__menu`).menu
     .menu__content
-      .menu__block 
-        img(src='img/svg/catalog.svg' alt='Каталог').menu__image
-        p.menu__text Каталог
-      .menu__block 
-        img(src='img/svg/apple.svg' alt='иконка').menu__image
-        p.menu__text Ремонт Apple
-        img(src='img/svg/arrow.svg' alt='Открыть').menu__arrow
-      .menu__block 
-        img(src='img/svg/ph.svg' alt='иконка').menu__image
-        p.menu__text Ремонт смартфонов
-        img(src='img/svg/arrow.svg' alt='Открыть').menu__arrow
-      .menu__block 
-        img(src='img/svg/tablet.svg' alt='иконка').menu__image
-        p.menu__text Ремонт планшетов
-        img(src='img/svg/arrow.svg' alt='Открыть').menu__arrow
-      .menu__block 
-        img(src='img/svg/laptop.svg' alt='иконка').menu__image
-        p.menu__text Ремонт ноутбуков
-        img(src='img/svg/arrow.svg' alt='Открыть').menu__arrow
-      
+      .menu__catalog 
+        picture.menu__images
+          source(srcset="img/svg/burg.svg" media="(max-width: 767px)")
+          img(src='img/svg/catalog.svg' alt='Каталог').menu__icon
+        p.menu__txt Каталог
+      .menu__general
+        .menu__title 
+            h2.menu__title_title Меню
+            img(src='img/svg/close.svg' alt='закрыть').menu__title_close
+        .menu__block 
+          img(src='img/svg/apple.svg' alt='иконка').menu__image
+          p.menu__text Ремонт Apple
+          img(src='img/svg/arrow.svg' alt='Открыть').menu__arrow
+        .menu__block 
+          img(src='img/svg/ph.svg' alt='иконка').menu__image
+          p.menu__text Ремонт смартфонов
+          img(src='img/svg/arrow.svg' alt='Открыть').menu__arrow
+        .menu__block 
+          img(src='img/svg/tablet.svg' alt='иконка').menu__image
+          p.menu__text Ремонт планшетов
+          img(src='img/svg/arrow.svg' alt='Открыть').menu__arrow
+        .menu__block 
+          img(src='img/svg/laptop.svg' alt='иконка').menu__image
+          p.menu__text Ремонт ноутбуков
+          img(src='img/svg/arrow.svg' alt='Открыть').menu__arrow
+        .menu__block 
+          img(src='img/svg/game.svg' alt='иконка').menu__image
+          p.menu__text Ремонт игровых приставок
+          img(src='img/svg/arrow.svg' alt='Открыть').menu__arrow
+      a(href="#").menu__link Связаться
